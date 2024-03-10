@@ -6,7 +6,7 @@
 #    By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/08 01:08:31 by lsaumon           #+#    #+#              #
-#    Updated: 2024/03/09 21:58:27 by lsaumon          ###   ########.fr        #
+#    Updated: 2024/03/10 17:30:05 by lsaumon          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,8 @@ SRC			:= ./srcs
 
 SRCS		:= $(addprefix $(SRC)/, main.c) \
 			   $(addprefix $(SRC)/, push_swap_utils.c) \
+			   $(addprefix $(SRC)/, push_swap_utils2.c) \
+			   $(addprefix $(SRC)/, push_swap_utils3.c) \
 
 OBJ_DIR		:= .objs
 OBJS		:= $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))

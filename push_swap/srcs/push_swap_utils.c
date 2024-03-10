@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 21:18:09 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/03/10 16:20:21 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/03/10 17:27:02 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,16 +36,14 @@ void	sb(t_stack *b)
 
 void	ss(t_stack *a, t_stack *b)
 {
-	if (ft_lstsize(a) < 2 || ft_lstsize(b) < 2)
-		return ;
 	sa(a);
 	sb(b);
 }
 
 void	pa(t_stack **a, t_stack **b)
 {
-	t_stack *temp;
-	
+	t_stack	*temp;
+
 	if (ft_lstsize(*b) < 1)
 		return ;
 	temp = *b;
@@ -56,8 +54,8 @@ void	pa(t_stack **a, t_stack **b)
 
 void	pb(t_stack **a, t_stack **b)
 {
-	t_stack *temp;
-	
+	t_stack	*temp;
+
 	if (ft_lstsize(*a) < 1)
 		return ;
 	temp = *a;

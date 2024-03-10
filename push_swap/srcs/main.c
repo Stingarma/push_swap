@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 00:51:35 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/03/10 16:20:00 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/03/10 17:38:27 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,33 +16,34 @@ int main(int argc, char **argv)
 {
 	(void)argc;
 	(void)argv;
-	// t_stack_a stack_a;
-	// t_stack_b *stack_b;
-	// t_stack_top *top;
 	
 	t_stack a, b, c;
-	t_stack d, e, f;
-	t_stack *g, *h;
+	// t_stack d, e, f;
+	// t_stack *g, *h;
+	t_stack	*i;
+	// t_stack	*j;
 	t_stack *temp;
 
 	a.next = &b;
 	b.next = &c;
 	c.next = NULL;
 
-	d.next = &e;
-	e.next = &f;
-	f.next = NULL;
+	// d.next = &e;
+	// e.next = &f;
+	// f.next = NULL;
 	
 	a.value = 12;
 	b.value = 5;
 	c.value = 32;
 
-	d.value = 7;
-	e.value = 63;
-	f.value = 15;
+	// d.value = 7;
+	// e.value = 63;
+	// f.value = 15;
 
-	g = &a;
-	h = &d;
+	// g = &a;
+	// h = &d;
+	i = &a;
+	// j = &d;
 
 	// printf("%d %d %d\n", a.value, a.next->value, a.next->next->value);
 	// printf("%d %d %d\n", d.value, d.next->value, d.next->next->value);
@@ -52,7 +53,7 @@ int main(int argc, char **argv)
 	// printf("%d %d %d\n", a.value, a.next->value, a.next->next->value);
 	// printf("%d %d %d\n", d.value, d.next->value, d.next->next->value);
 
-	temp = g;
+	temp = i;
 	
 	while (temp)
 	{
@@ -60,17 +61,18 @@ int main(int argc, char **argv)
 		temp = temp->next;
 	}
 	printf("\n");
-	temp = h;
+	// temp = j;
 	
-	while (temp)
-	{
-		printf("%d ", temp->value);
-		temp = temp->next;
-	}
-	printf("\n");
-	pb(&g, &h);
+	// while (temp)
+	// {
+	// 	printf("%d ", temp->value);
+	// 	temp = temp->next;
+	// }
+	// printf("\n");
+	
+	rra(&i);
 
-	temp = g;
+	temp = i;
 	
 	while (temp)
 	{
@@ -78,14 +80,14 @@ int main(int argc, char **argv)
 		temp = temp->next;
 	}
 	printf("\n");
-	temp = h;
+	// temp = j;
 	
-	while (temp)
-	{
-		printf("%d ", temp->value);
-		temp = temp->next;
-	}
-	printf("\n");
+	// while (temp)
+	// {
+	// 	printf("%d ", temp->value);
+	// 	temp = temp->next;
+	// }
+	// printf("\n");
 	return (0);
 }
 

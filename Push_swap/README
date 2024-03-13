@@ -1,0 +1,9 @@
+Les données de /goinfre sont supprimées dès que le disque de l'iMacs est > 90%. Le disque de votre HOME n'est pas concerné.
+
+Vous pouvez utiliser la session local checkin@event sur demande du staff/tuteurs. Les données de cette session seront supprimées à chaque logout.
+
+Les raccourcis clavier pour logout: Ctrl+Alt+del et pour lockscreen: Ctrl+Alt+l.
+
+Pour reset votre sessions: touch $HOME/.reset
+
+zsh est le shell par défaut avec le framework 'Oh My Zsh' ainsi que les plugins zsh-autosuggestions, zsh-syntax-highlighting et bash-insulter.
